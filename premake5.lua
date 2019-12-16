@@ -11,6 +11,11 @@ solution "Renderer"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "GameEngine/extlib/GLFW/include"
+
+include "GameEngine/extlib/GLFW"
+
 project "GameEngine"
 	location "GameEngine"
 	kind "SharedLib"
@@ -27,9 +32,15 @@ project "GameEngine"
 
 	includedirs
 	{
-		"%{prj.name}/extlib/spdlog/include"
+		"%{prj.name}/extlib/spdlog/include",
+		"%{IncludeDir.GLFW}"
 	}
 
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
+	}
 
 	filter "system:windows"
 		cppdialect "C++17"
