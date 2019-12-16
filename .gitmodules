@@ -1,3 +1,9 @@
 [submodule "GameEngine/extlib/spdlog"]
 	path = GameEngine/extlib/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "GameEngine/extlib/GLFW"]
+	path = GameEngine/extlib/GLFW
+	url = https://github.com/TheCherno/Hazel.git
+[submodule "GameEngine/extlib/glfw_win"]
+	path = GameEngine/extlib/glfw_win
+	url = https://github.com/TheCherno/glfw.git
