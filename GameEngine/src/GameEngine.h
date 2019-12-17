@@ -2,6 +2,6 @@
 
 //For client applications
 
-#include "GameEngine/Application.h"
-#include "GameEngine/EntryPoint.h"
-#include "GameEngine/Log.h"
+#include "GameEngine/Core/Application.h"
+#include "GameEngine/Core/EntryPoint.h"
+#include "GameEngine/Core/Log.h"

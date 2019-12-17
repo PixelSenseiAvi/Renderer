@@ -13,10 +13,11 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "GameEngine/extlib/GLFW/include"
-IncludeDir["GLAD"] = "GameEngine/extlib/GLAD/include"
+IncludeDir["Glad"] = "GameEngine/extlib/Glad/include"
+IncludeDir["glm"] = "GameEngine/extlib/glm"
 
 include "GameEngine/extlib/GLFW"
-include "GameEngine/extlib/GLAD"
+include "GameEngine/extlib/Glad"
 
 project "GameEngine"
 	location "GameEngine"
@@ -29,7 +30,9 @@ project "GameEngine"
 	files
 	{
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/vendor/glm/glm/**.hpp",
+		"%{prj.name}/vendor/glm/glm/**.inl"
 	}
 
 	includedirs
@@ -37,13 +40,14 @@ project "GameEngine"
 		"%{prj.name}/src",
 		"%{prj.name}/extlib/spdlog/include",
 		"%{IncludeDir.GLFW}",
-		"%{IncludeDir.GLAD}"
+		"%{IncludeDir.Glad}",
+		"%{IncludeDir.glm}"
 	}
 
 	links
 	{
 		"GLFW",
-		"GLAD",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -94,6 +98,7 @@ project "Sandbox"
 	includedirs
 	{
 		"GameEngine/extlib/spdlog/include",
+		"%{IncludeDir.glm}",
 		"GameEngine/src"
 	}
 
