@@ -28,7 +28,6 @@ namespace Engine
 #define CORE_WARN(...)     ::Engine::Log::GetCoreLogger()->warn(__VA_ARGS__)
 #define CORE_ERROR(...)    ::Engine::Log::GetCoreLogger()->error(__VA_ARGS__)
 #define CORE_CRITICAL(...) ::Engine::Log::GetCoreLogger()->critical(__VA_ARGS__)
-
 // Client log macros
 #define CL_TRACE(...)         ::Engine::Log::GetClientLogger()->trace(__VA_ARGS__)
 #define CL_INFO(...)          ::Engine::Log::GetClientLogger()->info(__VA_ARGS__)
