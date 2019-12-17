@@ -15,9 +15,13 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "GameEngine/extlib/GLFW/include"
 IncludeDir["Glad"] = "GameEngine/extlib/Glad/include"
 IncludeDir["glm"] = "GameEngine/extlib/glm"
+IncludeDir["ImGui"] = "GameEngine/extlib/imgui"
 
-include "GameEngine/extlib/GLFW"
-include "GameEngine/extlib/Glad"
+group "Dependencies"
+	include "GameEngine/extlib/GLFW"
+	include "GameEngine/extlib/Glad"
+	include "GameEngine/extlib/imgui"
+group ""
 
 project "GameEngine"
 	location "GameEngine"
@@ -31,8 +35,8 @@ project "GameEngine"
 	{
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp",
-		"%{prj.name}/vendor/glm/glm/**.hpp",
-		"%{prj.name}/vendor/glm/glm/**.inl"
+		"%{prj.name}/extlib/glm/glm/**.hpp",
+		"%{prj.name}/extlib/glm/glm/**.inl"
 	}
 
 	includedirs
@@ -41,13 +45,15 @@ project "GameEngine"
 		"%{prj.name}/extlib/spdlog/include",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
-		"%{IncludeDir.glm}"
+		"%{IncludeDir.glm}",
+		"%{IncludeDir.ImGui}"
 	}
 
 	links
 	{
 		"GLFW",
 		"Glad",
+		"ImGui",
 		"opengl32.lib"
 	}
 

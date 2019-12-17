@@ -79,7 +79,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>EN_PLATFORM_WINDOWS;EN_BUILD_DLL;EN_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;extlib\spdlog\include;extlib\GLFW\include;extlib\Glad\include;extlib\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;extlib\spdlog\include;extlib\GLFW\include;extlib\Glad\include;extlib\glm;extlib\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -100,7 +100,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>EN_PLATFORM_WINDOWS;EN_BUILD_DLL;EN_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;extlib\spdlog\include;extlib\GLFW\include;extlib\Glad\include;extlib\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;extlib\spdlog\include;extlib\GLFW\include;extlib\Glad\include;extlib\glm;extlib\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -125,7 +125,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>EN_PLATFORM_WINDOWS;EN_BUILD_DLL;EN_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;extlib\spdlog\include;extlib\GLFW\include;extlib\Glad\include;extlib\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;extlib\spdlog\include;extlib\GLFW\include;extlib\Glad\include;extlib\glm;extlib\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -146,6 +146,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ui.h" />
     <ClInclude Include="src\GameEngine.h" />
     <ClInclude Include="src\GameEngine\CommonValues.h" />
     <ClInclude Include="src\GameEngine\Core\Application.h" />
@@ -154,13 +155,16 @@
     <ClInclude Include="src\GameEngine\Core\Log.h" />
     <ClInclude Include="src\GameEngine\glPipeline\Camera.h" />
     <ClInclude Include="src\GameEngine\glPipeline\Shader.h" />
+    <ClInclude Include="src\GameEngine\glPipeline\Skybox.h" />
     <ClInclude Include="src\GameEngine\glPipeline\Windows.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ui.cpp" />
     <ClCompile Include="src\GameEngine\Core\Application.cpp" />
     <ClCompile Include="src\GameEngine\Core\Log.cpp" />
     <ClCompile Include="src\GameEngine\glPipeline\Camera.cpp" />
     <ClCompile Include="src\GameEngine\glPipeline\Shader.cpp" />
+    <ClCompile Include="src\GameEngine\glPipeline\Skybox.cpp" />
     <ClCompile Include="src\GameEngine\glPipeline\Windows.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -169,6 +173,9 @@
     </ProjectReference>
     <ProjectReference Include="extlib\Glad\Glad.vcxproj">
       <Project>{BDD6857C-A90D-870D-52FA-6C103E10030F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="extlib\imgui\ImGui.vcxproj">
+      <Project>{C0FF640D-2C14-8DBE-F595-301E616989EF}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
