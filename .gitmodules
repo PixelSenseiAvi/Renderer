@@ -7,3 +7,6 @@
 [submodule "GameEngine/extlib/glfw_win"]
 	path = GameEngine/extlib/glfw_win
 	url = https://github.com/TheCherno/glfw.git
+[submodule "GameEngine/extlib/imgui"]
+	path = GameEngine/extlib/imgui
+	url = https://github.com/ocornut/imgui.git
