@@ -152,11 +152,15 @@
     <ClInclude Include="src\GameEngine\Core\Core.h" />
     <ClInclude Include="src\GameEngine\Core\EntryPoint.h" />
     <ClInclude Include="src\GameEngine\Core\Log.h" />
+    <ClInclude Include="src\GameEngine\glPipeline\Camera.h" />
+    <ClInclude Include="src\GameEngine\glPipeline\Shader.h" />
     <ClInclude Include="src\GameEngine\glPipeline\Windows.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\GameEngine\Core\Application.cpp" />
     <ClCompile Include="src\GameEngine\Core\Log.cpp" />
+    <ClCompile Include="src\GameEngine\glPipeline\Camera.cpp" />
+    <ClCompile Include="src\GameEngine\glPipeline\Shader.cpp" />
     <ClCompile Include="src\GameEngine\glPipeline\Windows.cpp" />
   </ItemGroup>
   <ItemGroup>
