@@ -16,12 +16,15 @@ IncludeDir["GLFW"] = "GameEngine/extlib/GLFW/include"
 IncludeDir["Glad"] = "GameEngine/extlib/Glad/include"
 IncludeDir["glm"] = "GameEngine/extlib/glm"
 IncludeDir["ImGui"] = "GameEngine/extlib/imgui"
+IncludeDir["assimp"] = "GameEngine/extlib/assimp1/include"
 
 group "Dependencies"
 	include "GameEngine/extlib/GLFW"
 	include "GameEngine/extlib/Glad"
 	include "GameEngine/extlib/imgui"
+	include "GameEngine/extlib/assimp1"
 group ""
+
 
 project "GameEngine"
 	location "GameEngine"
@@ -46,7 +49,8 @@ project "GameEngine"
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
 		"%{IncludeDir.glm}",
-		"%{IncludeDir.ImGui}"
+		"%{IncludeDir.ImGui}",
+		"%{IncludeDir.assimp}"
 	}
 
 	links
@@ -54,6 +58,7 @@ project "GameEngine"
 		"GLFW",
 		"Glad",
 		"ImGui",
+		"assimp",
 		"opengl32.lib"
 	}
 

@@ -34,14 +34,8 @@
     <ClInclude Include="src\GameEngine\glPipeline\Shader.h">
       <Filter>GameEngine\glPipeline</Filter>
     </ClInclude>
-    <ClInclude Include="src\GameEngine\glPipeline\Skybox.h">
-      <Filter>GameEngine\glPipeline</Filter>
-    </ClInclude>
     <ClInclude Include="src\GameEngine\glPipeline\Windows.h">
       <Filter>GameEngine\glPipeline</Filter>
-    </ClInclude>
-    <ClInclude Include="ui.h">
-      <Filter>GameEngine\Core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -57,14 +51,8 @@
     <ClCompile Include="src\GameEngine\glPipeline\Shader.cpp">
       <Filter>GameEngine\glPipeline</Filter>
     </ClCompile>
-    <ClCompile Include="src\GameEngine\glPipeline\Skybox.cpp">
-      <Filter>GameEngine\glPipeline</Filter>
-    </ClCompile>
     <ClCompile Include="src\GameEngine\glPipeline\Windows.cpp">
       <Filter>GameEngine\glPipeline</Filter>
-    </ClCompile>
-    <ClCompile Include="ui.cpp">
-      <Filter>GameEngine\Core</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

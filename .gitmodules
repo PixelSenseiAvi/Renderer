@@ -10,6 +10,3 @@
 [submodule "GameEngine/extlib/imgui"]
 	path = GameEngine/extlib/imgui
 	url = https://github.com/ocornut/imgui.git
-[submodule "GameEngine/extlib/assimp"]
-	path = GameEngine/extlib/assimp
-	url = https://github.com/assimp/assimp
