@@ -3,7 +3,6 @@
 //Creating GLFW windows
 
 #include "GameEngine/CommonValues.h"
-#include <GLFW/glfw3.h>
 
 //var
 class Window

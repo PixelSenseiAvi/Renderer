@@ -1,58 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="GameEngine">
-      <UniqueIdentifier>{D54F7917-C107-BB64-2A0F-94C016E65555}</UniqueIdentifier>
+    <Filter Include="extlib">
+      <UniqueIdentifier>{0DFE34FC-F99F-5FD2-E25A-7326CE9BE622}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GameEngine\Core">
-      <UniqueIdentifier>{4DA1F6E6-B92C-64AB-C23D-E79F2E48C0AB}</UniqueIdentifier>
+    <Filter Include="extlib\stb_image">
+      <UniqueIdentifier>{E7627A0B-D35B-995D-FC8D-7EE2E8E57869}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GameEngine\glPipeline">
-      <UniqueIdentifier>{4DE1C362-B94D-7F5D-8241-17BBEE6CA1C5}</UniqueIdentifier>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameEngine">
+      <UniqueIdentifier>{8CEC7F4E-78BA-7354-614E-E47A4DBB4FB9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameEngine\Core">
+      <UniqueIdentifier>{64C85E01-D029-3C0F-5997-82C1C5F772CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameEngine\glPipeline">
+      <UniqueIdentifier>{A4BDE8B4-1080-1C3F-5930-ABCBC531F51C}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\GameEngine.h" />
+    <ClInclude Include="extlib\stb_image\stb_image.h">
+      <Filter>extlib\stb_image</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameEngine.h">
+      <Filter>src</Filter>
+    </ClInclude>
     <ClInclude Include="src\GameEngine\CommonValues.h">
-      <Filter>GameEngine</Filter>
+      <Filter>src\GameEngine</Filter>
     </ClInclude>
     <ClInclude Include="src\GameEngine\Core\Application.h">
-      <Filter>GameEngine\Core</Filter>
+      <Filter>src\GameEngine\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\GameEngine\Core\Core.h">
-      <Filter>GameEngine\Core</Filter>
+      <Filter>src\GameEngine\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\GameEngine\Core\EntryPoint.h">
-      <Filter>GameEngine\Core</Filter>
+      <Filter>src\GameEngine\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\GameEngine\Core\Log.h">
-      <Filter>GameEngine\Core</Filter>
+      <Filter>src\GameEngine\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\GameEngine\glPipeline\Camera.h">
-      <Filter>GameEngine\glPipeline</Filter>
+      <Filter>src\GameEngine\glPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameEngine\glPipeline\Material.h">
+      <Filter>src\GameEngine\glPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameEngine\glPipeline\Mesh.h">
+      <Filter>src\GameEngine\glPipeline</Filter>
     </ClInclude>
     <ClInclude Include="src\GameEngine\glPipeline\Shader.h">
-      <Filter>GameEngine\glPipeline</Filter>
+      <Filter>src\GameEngine\glPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameEngine\glPipeline\Skybox.h">
+      <Filter>src\GameEngine\glPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameEngine\glPipeline\Texture.h">
+      <Filter>src\GameEngine\glPipeline</Filter>
     </ClInclude>
     <ClInclude Include="src\GameEngine\glPipeline\Windows.h">
-      <Filter>GameEngine\glPipeline</Filter>
+      <Filter>src\GameEngine\glPipeline</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="extlib\stb_image\stb_image.cpp">
+      <Filter>extlib\stb_image</Filter>
+    </ClCompile>
     <ClCompile Include="src\GameEngine\Core\Application.cpp">
-      <Filter>GameEngine\Core</Filter>
+      <Filter>src\GameEngine\Core</Filter>
     </ClCompile>
     <ClCompile Include="src\GameEngine\Core\Log.cpp">
-      <Filter>GameEngine\Core</Filter>
+      <Filter>src\GameEngine\Core</Filter>
     </ClCompile>
     <ClCompile Include="src\GameEngine\glPipeline\Camera.cpp">
-      <Filter>GameEngine\glPipeline</Filter>
+      <Filter>src\GameEngine\glPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameEngine\glPipeline\Material.cpp">
+      <Filter>src\GameEngine\glPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameEngine\glPipeline\Mesh.cpp">
+      <Filter>src\GameEngine\glPipeline</Filter>
     </ClCompile>
     <ClCompile Include="src\GameEngine\glPipeline\Shader.cpp">
-      <Filter>GameEngine\glPipeline</Filter>
+      <Filter>src\GameEngine\glPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameEngine\glPipeline\Skybox.cpp">
+      <Filter>src\GameEngine\glPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameEngine\glPipeline\Texture.cpp">
+      <Filter>src\GameEngine\glPipeline</Filter>
     </ClCompile>
     <ClCompile Include="src\GameEngine\glPipeline\Windows.cpp">
-      <Filter>GameEngine\glPipeline</Filter>
+      <Filter>src\GameEngine\glPipeline</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

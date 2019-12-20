@@ -17,6 +17,7 @@ IncludeDir["Glad"] = "GameEngine/extlib/Glad/include"
 IncludeDir["glm"] = "GameEngine/extlib/glm"
 IncludeDir["ImGui"] = "GameEngine/extlib/imgui"
 IncludeDir["assimp"] = "GameEngine/extlib/assimp1/include"
+IncludeDir["stb_image"] = "GameEngine/extlib/stb_image"
 
 group "Dependencies"
 	include "GameEngine/extlib/GLFW"
@@ -38,6 +39,8 @@ project "GameEngine"
 	{
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/extlib/stb_image/stb_image.h",
+		"%{prj.name}/extlib/stb_image/stb_image.cpp",
 		"%{prj.name}/extlib/glm/glm/**.hpp",
 		"%{prj.name}/extlib/glm/glm/**.inl"
 	}
@@ -50,7 +53,8 @@ project "GameEngine"
 		"%{IncludeDir.Glad}",
 		"%{IncludeDir.glm}",
 		"%{IncludeDir.ImGui}",
-		"%{IncludeDir.assimp}"
+		"%{IncludeDir.assimp}",
+		"%{IncludeDir.stb_image}"
 	}
 
 	links
