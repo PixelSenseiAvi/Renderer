@@ -1,3 +1,4 @@
+#include "enpch.h"
 #include "Camera.h"
 
 Camera::Camera() {}

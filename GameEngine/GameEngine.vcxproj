@@ -76,7 +76,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>enpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>EN_PLATFORM_WINDOWS;EN_BUILD_DLL;EN_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;extlib\spdlog\include;extlib\GLFW\include;extlib\Glad\include;extlib\glm;extlib\imgui;extlib\assimp1\include;extlib\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -97,7 +98,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>enpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>EN_PLATFORM_WINDOWS;EN_BUILD_DLL;EN_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;extlib\spdlog\include;extlib\GLFW\include;extlib\Glad\include;extlib\glm;extlib\imgui;extlib\assimp1\include;extlib\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -122,7 +124,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>enpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>EN_PLATFORM_WINDOWS;EN_BUILD_DLL;EN_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;extlib\spdlog\include;extlib\GLFW\include;extlib\Glad\include;extlib\glm;extlib\imgui;extlib\assimp1\include;extlib\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -160,6 +163,7 @@
     <ClInclude Include="src\GameEngine\glPipeline\Skybox.h" />
     <ClInclude Include="src\GameEngine\glPipeline\Texture.h" />
     <ClInclude Include="src\GameEngine\glPipeline\Windows.h" />
+    <ClInclude Include="src\enpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="extlib\stb_image\stb_image.cpp" />
@@ -172,6 +176,9 @@
     <ClCompile Include="src\GameEngine\glPipeline\Skybox.cpp" />
     <ClCompile Include="src\GameEngine\glPipeline\Texture.cpp" />
     <ClCompile Include="src\GameEngine\glPipeline\Windows.cpp" />
+    <ClCompile Include="src\enpch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="extlib\GLFW\GLFW.vcxproj">

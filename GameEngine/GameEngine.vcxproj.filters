@@ -63,6 +63,9 @@
     <ClInclude Include="src\GameEngine\glPipeline\Windows.h">
       <Filter>src\GameEngine\glPipeline</Filter>
     </ClInclude>
+    <ClInclude Include="src\enpch.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="extlib\stb_image\stb_image.cpp">
@@ -94,6 +97,9 @@
     </ClCompile>
     <ClCompile Include="src\GameEngine\glPipeline\Windows.cpp">
       <Filter>src\GameEngine\glPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enpch.cpp">
+      <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
