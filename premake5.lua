@@ -8,6 +8,8 @@ solution "Renderer"
 		"Release",
 		"Dist"
 	}
+	
+	startproject "Sandbox"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
