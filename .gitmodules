@@ -9,4 +9,4 @@
 	url = https://github.com/TheCherno/glfw.git
 [submodule "GameEngine/extlib/imgui"]
 	path = GameEngine/extlib/imgui
-	url = https://github.com/ocornut/imgui.git
+	url = https://github.com/rockchik/imgui.git
