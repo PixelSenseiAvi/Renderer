@@ -2,9 +2,7 @@
 A General purpose Game Engine (Currently supports Windows only)
 
 # Installation Instructions
-* Download the premake5.exe in a folder "Renderer/extlib/bin/Premake"
-* Clone repo and run GenerateProject.bat
-* Run Renderer.sln (Change vs version if needed in "GenerateProject.bat")
+Clone repo and run GenerateProject.bat
 
 # Integrated dependencies
 GLAD, GLFW, Assimp, ImGui, stb_image, GLM, spdLog

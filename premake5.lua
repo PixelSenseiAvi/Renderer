@@ -8,8 +8,6 @@ solution "Renderer"
 		"Release",
 		"Dist"
 	}
-	
-	startproject "Sandbox"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
@@ -18,14 +16,14 @@ IncludeDir["GLFW"] = "GameEngine/extlib/GLFW/include"
 IncludeDir["Glad"] = "GameEngine/extlib/Glad/include"
 IncludeDir["glm"] = "GameEngine/extlib/glm"
 IncludeDir["ImGui"] = "GameEngine/extlib/imgui"
-IncludeDir["assimp"] = "GameEngine/extlib/assimp/include"
+IncludeDir["assimp"] = "GameEngine/extlib/assimp1/include"
 IncludeDir["stb_image"] = "GameEngine/extlib/stb_image"
 
 group "Dependencies"
 	include "GameEngine/extlib/GLFW"
 	include "GameEngine/extlib/Glad"
 	include "GameEngine/extlib/imgui"
-	include "GameEngine/extlib/assimp"
+	include "GameEngine/extlib/assimp1"
 group ""
 
 
