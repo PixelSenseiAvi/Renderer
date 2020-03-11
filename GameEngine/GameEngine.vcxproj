@@ -19,26 +19,26 @@
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>GameEngine</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -159,6 +159,7 @@
     <ClInclude Include="src\GameEngine\glPipeline\Camera.h" />
     <ClInclude Include="src\GameEngine\glPipeline\Material.h" />
     <ClInclude Include="src\GameEngine\glPipeline\Mesh.h" />
+    <ClInclude Include="src\GameEngine\glPipeline\Model.h" />
     <ClInclude Include="src\GameEngine\glPipeline\Shader.h" />
     <ClInclude Include="src\GameEngine\glPipeline\Skybox.h" />
     <ClInclude Include="src\GameEngine\glPipeline\Texture.h" />
@@ -172,6 +173,7 @@
     <ClCompile Include="src\GameEngine\glPipeline\Camera.cpp" />
     <ClCompile Include="src\GameEngine\glPipeline\Material.cpp" />
     <ClCompile Include="src\GameEngine\glPipeline\Mesh.cpp" />
+    <ClCompile Include="src\GameEngine\glPipeline\Model.cpp" />
     <ClCompile Include="src\GameEngine\glPipeline\Shader.cpp" />
     <ClCompile Include="src\GameEngine\glPipeline\Skybox.cpp" />
     <ClCompile Include="src\GameEngine\glPipeline\Texture.cpp" />

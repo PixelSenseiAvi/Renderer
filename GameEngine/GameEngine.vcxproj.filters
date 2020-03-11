@@ -51,6 +51,9 @@
     <ClInclude Include="src\GameEngine\glPipeline\Mesh.h">
       <Filter>src\GameEngine\glPipeline</Filter>
     </ClInclude>
+    <ClInclude Include="src\GameEngine\glPipeline\Model.h">
+      <Filter>src\GameEngine\glPipeline</Filter>
+    </ClInclude>
     <ClInclude Include="src\GameEngine\glPipeline\Shader.h">
       <Filter>src\GameEngine\glPipeline</Filter>
     </ClInclude>
@@ -84,6 +87,9 @@
       <Filter>src\GameEngine\glPipeline</Filter>
     </ClCompile>
     <ClCompile Include="src\GameEngine\glPipeline\Mesh.cpp">
+      <Filter>src\GameEngine\glPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameEngine\glPipeline\Model.cpp">
       <Filter>src\GameEngine\glPipeline</Filter>
     </ClCompile>
     <ClCompile Include="src\GameEngine\glPipeline\Shader.cpp">
