@@ -118,7 +118,10 @@ project "Sandbox"
 	{
 		"GameEngine/extlib/spdlog/include",
 		"%{IncludeDir.glm}",
-		"GameEngine/src"
+		"GameEngine/src",
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}",
+		"%{IncludeDir.assimp}"
 	}
 
 	links
