@@ -1,5 +1,5 @@
 # Renderer
-A General purpose Game Engine (Currently supports Windows only)
+A General purpose Game Engine in work. (Currently supports Windows only)
 
 # Installation Instructions
 * Download the [premake5.exe](https://premake.github.io/download.html) in a folder "Renderer/extlib/bin/Premake"
